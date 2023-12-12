@@ -1,0 +1,44 @@
+@use "global" as *;
+
+.information{
+    padding: 0 rem(30);
+}
+
+.information__head{
+    text-align: center;
+}
+
+.information__url{
+    text-align: center;
+    margin-top: rem(30);
+}
+
+.information__url a{
+	display: inline-block;
+	position: relative;
+	color: #555;
+ 	text-decoration: none;
+}
+
+.information__url a:before{
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: rem(-1);
+	width: 100%;
+	height: rem(1.5);
+	background: #555;
+	transform: scale(0, 1);
+	transition: 0.4s;
+}
+
+.information__url a:hover:before {
+	transform: scale(1);
+}
+
+
+
+
+.information__text{
+    margin-top: rem(34);
+}
