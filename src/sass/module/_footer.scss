@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.footer__copyright{
+    text-align: center;
+    background-color: $black;
+    color: $white;
+    padding: rem(18) 0;
+}
