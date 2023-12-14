@@ -1,0 +1,101 @@
+@use "global" as *;
+
+::placeholder {
+   color: $black;
+   opacity: 0.2;
+}
+
+.form__title{
+   margin-top: rem(50);
+   padding-bottom: rem(15);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+// 必須　ラベル
+.form__label {
+   display: inline-block;
+   color: $white;
+   background: #C94800;
+   font-size: rem(12);
+   margin-left: rem(4);
+   padding: rem(2) rem(13) rem(0) rem(13);
+}
+
+
+
+// ----------性別----------
+.form__box{
+   text-align: center;
+}
+
+.form__gender{
+   display: flex;
+   gap: rem(15);
+}
+
+.form__radio{
+   color: #000;
+   background-color: rosybrown;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: rem(5);
+   padding: rem(10) 0;
+   width: 50%;
+}
+
+.form__radio:has(input:checked) {
+   color: #fff;
+   background-color: rgb(88, 0, 0);
+}
+
+
+// ----------生年月日----------
+.form__birthday select {
+   border: solid 1px $black ;
+   padding: 0 rem(10);
+   margin-left: rem(5);
+   margin-right: rem(2);
+}
+
+
+// ----------名前----------
+.form__text{
+   text-align: center;
+   width: 100%;
+   background-color: #fff;
+   border-radius: rem(5);
+   border: solid rem(1)  #dcdcdc;
+   padding: rem(5) rem(15);
+}
+
+.form__back{
+   text-align: center;  
+   margin-top: rem(30); 
+}
+
+// 送信ボタン
+.form__btn {
+   text-align: center;
+   margin-top: rem(22);
+   @include mq("md") {
+     margin-top: rem(38);
+   }
+ }
+ 
+ // 未入力エラー
+ .required[type="text"],
+ .required[type="tel"],
+ .required[type="email"],
+ .required[type="date"],
+ textarea.required, 
+ .required[type="checkbox"] + span::before {
+   background: rgba(201, 72, 0, 0.20);
+   border: 1px solid #C94800;
+ }
+ 
+ .required::placeholder {
+   color: $white;
+ }

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="robots" content="noindex" />
+    <!-- meta情報 -->
+    <title>蒼喜先生</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- ogp -->
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <!-- ファビコン -->
+    <link rel="”icon”" href="" />
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script defer src="./assets/js/script.js"></script>
+</head>
+<body>
+    <div class="contact__color">
+
+        <main class="contact__main contact__main--color">
+            <!--メインビュー-->
+            <div class="contact__mv">
+                <img src="https://placehold.jp/600x320.png" alt="">
+            </div>
+            
+
+
+            <!--form-->
+            <div>
+                <div class="contact__error">
+                    <p>※必須項目が入力されていません。<br class="u-mobile">
+                      入力してください。</p>
+                </div>
+        
+                <form id="form" action="process_form.php" method="post" class="sub-contact__form form">
+                    <dl>
+                        <dt>
+                            お名前<span class="form__label">必須</span>
+                        </dt>
+                        <dd>
+                            <input type="text" name="company" value="" placeholder="沖縄&nbsp;&nbsp;太郎" required/>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            メールアドレス<span class="form__label">必須</span>
+                        </dt>
+                        <dd>
+                            <input type="email" name="mail_address" value="" class="validate[]" placeholder="aaa000@ggmail.com" required/>
+                        </dd>
+                    </dl>
+                    
+
+                    <div class="form__btn">
+                        <div class="btn-submit">
+                            <input type="submit" class="btn-submit__body js-submit" value="" />
+                            <span class="btn-submit__text">Send</span>
+                        </div>
+                      </div>
+                </form> 
+            </div>
+
+
+
+            <!--戻る-->
+            <div class="">
+                <a href="index.html">前へ戻る</a>
+            </div>
+
+
+
+            <!--copyright-->
+            <div class="footer__copyright">
+                <small>Ⓒ 2023 ここにテキストが入ります</small>
+            </div>
+        </main>
+
+    </div>
+</body>
+</html>

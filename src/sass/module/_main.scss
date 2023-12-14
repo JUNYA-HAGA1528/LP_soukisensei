@@ -1,15 +1,7 @@
 @use "global" as *;
 
-.all-color{
-    background-color: #fff;
-}
-
 main{
     max-width: rem(600);
     margin: auto;
     background-color: $white;
-}
-
-.main--color{
-    background-color: #fffff0;
 }
