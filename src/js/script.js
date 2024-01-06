@@ -1,6 +1,5 @@
-
 $(document).ready(function(){
-    $('#form').submit(function(event){
+    $('#submitButton').click(function(event){
         var error = false;
 
         // ①性別
